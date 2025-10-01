@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gilber Chen">
+    <title>About - Gilber Chen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(./src/Image.png);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Navigation */
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #1a1a1a;
+        }
+        nav li {
+            padding: 8px;
+        }
+        nav li a {
+            padding: 14px 16px;
+            display: block;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        nav li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        nav li a.active {
+            color: #00ff99;
+        }
+
+        /* Main content */
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            color: white;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 100px; /* Adds space at the bottom for footer */
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #00ff99;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #cccccc;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a;
+            color: white;
+            /* Remove fixed position */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html" class="active">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div>
+            <h1>About Gilber Chen</h1>
+            <p>Hi, I'm Gilber Chen, a recent graduate in Software Engineering with an emphasis on Project Management from Brigham Young University - Idaho. Originally from Taiwan, I bring a unique perspective to the IT field, blending cultural diversity with a solid technical foundation.</p>
+
+            <p>My studies included a minor in Computer Information Technology, where I delved deep into networking and cybersecurity. Through my education, internships, and hands-on projects, I’ve built a robust skill set in software development, project coordination, and IT support.</p>
+
+            <h2>What I Do</h2>
+            <p>I’m passionate about creating efficient software solutions, managing complex projects, and supporting IT systems. I’ve led teams, coordinated resources, and solved challenging technical issues, all with a focus on enhancing productivity and delivering high-quality results.</p>
+
+            <h2>What I’m Looking For</h2>
+            <p>I’m currently seeking a full-time role where I can apply my skills and experience. I’m interested in positions related to project management, software engineering, or IT support, where I can contribute to innovative projects and help companies streamline their processes.</p>
+            
+            <p>Let’s connect! Whether you’re looking for a dedicated project lead, a reliable software engineer, or an IT professional ready to tackle tough challenges, I’d love to chat.</p>
+        </div>
+        <div class="image">
+            <img src="./src/gilberchen.png" alt="Gilber Chen">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gilber Chen</p>
+    </footer>
+</body>
+</html>

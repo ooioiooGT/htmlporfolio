@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Gilber">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gilber Chen</title>
+        <style>
+            :root {
+            --brand: #00a2ff;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                color: white;
+            }
+            
+            /* Navigation */
+            nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #1a1a1a;
+            }
+            nav li {
+                padding: 8px;
+            }
+            nav li a {
+                padding: 14px 16px;
+                display: block;
+                color: aliceblue;
+                text-decoration: none;
+            }
+            nav li a:hover {
+                background-color: #555;
+                border-radius: 5px;
+            }
+            nav li a.active {
+                color: #00ff99;
+            }
+            /* Home content */
+            main .home {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 15%;
+                padding-right: 15%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                color: white;
+            }
+            .home .text { flex: 1 1 520px; max-width: 700px; }
+            .home .text h1 { color:black ; margin: 10px 0; }
+            .home h1 span { color: var(--brand); } 
+            .home p { color: black; font-size: 18px; }
+
+            /* About content */
+
+            main .about{
+                padding-left: 15%;
+                padding-right: 15%;
+                text-align: center;
+
+            }
+            .about .card{ 
+                text-align: left;
+                border: 2px solid #e5e7eb;
+                border-radius: 16px;
+                background-color: rgb(251 251 251);
+                padding: 28px;
+                margin: 2%;
+
+            }
+            .about h1{color: black; }
+            .about h2 {  
+                color: #111827; 
+                font-size: 24px; 
+                margin: 0 0 18px;
+            }
+            .skills-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 18px 32px;
+            }
+            .about p {color: rgb(88, 88, 88); font-size: 18px;}
+            .skill{
+                background: #fff;
+                border: 1px solid #eef0f3;
+                border-radius: 12px;
+                padding: 14px 16px;
+            }
+
+                .skill-label{
+                color: #111827;
+                font-weight: 600;
+                letter-spacing: .2px;
+            }
+
+                .skill-percent{
+                float: right;
+                color: #6b7280;
+                font-weight: 600;
+            }
+
+                /* progress bar */
+                .progress{
+                position: relative;
+                height: 10px;
+                background: #e5e7eb;          /* light gray track */
+                border-radius: 999px;
+                overflow: hidden;
+                margin-top: 10px;
+            }
+
+                .progress-fill{
+                width: var(--pct, 0%);
+                height: 100%;
+                background: #1d4ed8;          /* blue fill */
+                border-radius: inherit;
+                transition: width .6s ease;
+            }
+            @media (max-width: 760px){
+            .skills-grid{ grid-template-columns: 1fr; }
+            }
+
+            /* Image */
+            main img {
+                width: 350px; 
+                border-radius: 8px;
+            }
+
+
+            /* Footer */
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #1a1a1a;
+                color: white;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#hone">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Main Content -->
+        <main>
+            <section class="home" id="home">
+               <div class="text">
+                    <h1>Hi, I’m <span style="color:var(--brand)">Gilber</span>. </h1>
+                    <p>Software Engineer | Project Management </p>
+                    <p class="muted">I’m a recent graduate in Software Engineering with an emphasis in Project Management and a minor in Computer Information Technology. Currently, I work as a Technology Support Specialist at Jolt Software, where I troubleshoot, optimize, and support enterprise software solutions.</p>
+                    <div class="row" style="margin-top:1rem">
+                        <a class="btn brand" href="#about">See about me</a>
+                        <a class="btn" href="#contact">Contact me</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <figure >
+                        <img src="./src/Gilber.png" alt="Portrait of Gilber" />
+                    </figure>
+                </div> 
+            </section>
+            <section class="about" id="about">
+                <dev class="title">
+                    <h1>About Me</h1>
+                    <p> A Software Engineering graduate with a passion for creating innovative solutions and a strong foundation in software development principles.
+                    <div class="card">
+                        <h2>Background</h2>
+                        <p>I graduated from Brigham Young University–Idaho in Software Engineering with a focus on Project Management and a minor in Computer Information Technology. I’ve worked in IT support at BYU–Idaho and as a Technical Support Specialist at Jolt Software, where I supported enterprise clients and helped develop AI-driven support tools.</p>
+                    </div>                
+                    <div class="card">
+                        <h2>Career Path</h2>
+                        <p>Passionate about technology and innovation, I’m focused on growing in software development, IT, and project management. I enjoy learning new skills, tackling challenges, and creating solutions that make a meaningful impact.</p>
+                    </div>
+                    <div class="card">
+                        <h2>Technical Skills</h2>
+                        <div class="skills-grid">
+                            <!-- Left column -->
+                            <div class="skill">
+                            <span class="skill-label">Python</span>
+                            <span class="skill-percent">90%</span>
+                            <div class="progress"><div class="progress-fill" style="--pct:90%"></div></div>
+                            </div>
+
+                            <div class="skill">
+                            <span class="skill-label">Java</span>
+                            <span class="skill-percent">85%</span>
+                            <div class="progress"><div class="progress-fill" style="--pct:85%"></div></div>
+                            </div>
+
+                            <div class="skill">
+                            <span class="skill-label">C#</span>
+                            <span class="skill-percent">80%</span>
+                            <div class="progress"><div class="progress-fill" style="--pct:80%"></div></div>
+                            </div>
+
+                            <div class="skill">
+                            <span class="skill-label">SQL</span>
+                            <span class="skill-percent">95%</span>
+                            <div class="progress"><div class="progress-fill" style="--pct:95%"></div></div>
+                            </div>
+
+                            <!-- Right column -->
+                            <div class="skill">
+                            <span class="skill-label">Agile/Scrum</span>
+                            <span class="skill-percent">95%</span>
+                            <div class="progress"><div class="progress-fill" style="--pct:95%"></div></div>
+                            </div>
+
+                            <div class="skill">
+                            <span class="skill-label">Project Planning</span>
+                            <span class="skill-percent">90%</span>
+                            <div class="progress"><div class="progress-fill" style="--pct:90%"></div></div>
+                            </div>
+
+                            <div class="skill">
+                            <span class="skill-label">Team Collaboration</span>
+                            <span class="skill-percent">85%</span>
+                            <div class="progress"><div class="progress-fill" style="--pct:85%"></div></div>
+                            </div>
+
+                            <div class="skill">
+                            <span class="skill-label">Cloud Platforms</span>
+                            <span class="skill-percent">80%</span>
+                            <div class="progress"><div class="progress-fill" style="--pct:80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </dev>
+            </section>
+            
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Gilber Chen</p>
+        </footer>
+    </body>
+</html>
