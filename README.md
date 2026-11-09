@@ -5,7 +5,7 @@ A three-page personal portfolio built with HTML, CSS, and vanilla JavaScript. No
 ## Pages
 
 - `index.html`: introduction, portrait, mission, experience, education, and skills.
-- `projects.html`: project summaries and links; initially shows a coming-soon message.
+- `projects.html`: project summaries, screenshots, and links, starting with Meal Rush.
 - `contact.html`: email, LinkedIn, Instagram, and YouTube.
 - `assets/styles.css`: shared layout, colors, typography, and mobile styles.
 - `assets/script.js`: automatically updates the footer year.
@@ -26,7 +26,7 @@ On Windows with the Python launcher, use `py -m http.server 8000`. Open http://l
 
 Edit the relevant HTML page directly. The mission on the home page is an initial draft and can be replaced with your own wording. Resume accomplishments have been shortened for the web. The phone number and source resume PDF are intentionally excluded from the public site.
 
-To add projects, remove the `empty-state` section in `projects.html`, uncomment the example `project-grid`, and replace its title, summary, and URL. Duplicate its `article` for each additional project. Do not leave the example URL in a published card.
+To add a project, add an `article` with class `card` inside the `project-grid` in `projects.html`. Include a title, summary, and project link. Store any screenshots in `assets/` and give them descriptive alternative text.
 
 Replace `assets/gilber-chen.jpg` to change the portrait, and update the image dimensions and alternative text in `index.html` if needed. Adjust the variables at the top of `assets/styles.css` for colors. Navigation and footers are repeated across the three HTML files; update all three when changing shared links.
 

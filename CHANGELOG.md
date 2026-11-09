@@ -1,5 +1,9 @@
 # Changelog
 
+## Meal Rush
+
+- Added Meal Rush as the first portfolio project, with lobby and gameplay screenshots, a play link, and the LinkedIn post.
+
 ## 2026-11-08 - Editorial restyle
 
 - Restyled all three pages with serif display type, more whitespace, thin dividers, and blue text links.

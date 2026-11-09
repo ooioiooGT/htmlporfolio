@@ -49,6 +49,10 @@ nav a[aria-current] { color: var(--blue); font-weight: 650; text-decoration: und
 .education-grid, .skills-grid, .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
 .card { padding-top: 22px; border-top: 1px solid var(--line); }
 .card h3 { margin-top: 18px; }
+.featured-project { grid-column: 1 / -1; }
+.project-screenshots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 24px; }
+.project-screenshots img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.project-screenshots figcaption { margin-top: 8px; color: var(--muted); font-size: .85rem; }
 .project-grid .card p { margin-block: 12px; }
 .card .organization { margin-bottom: 4px; }
 .skills-section { border-top: 1px solid var(--line); }
@@ -62,9 +66,6 @@ nav a[aria-current] { color: var(--blue); font-weight: 650; text-decoration: und
 .site-footer a { text-decoration: none; }
 .page-main { padding-block: 96px 110px; }
 .page-intro { max-width: 780px; margin-bottom: 48px; }
-.empty-state { border-top: 1px solid var(--line); padding-block: 36px 64px; }
-.empty-state h2 { margin-bottom: 16px; }
-.empty-state .text-link { display: inline-block; margin-top: 26px; }
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(32px, 8vw, 110px); }
 .email-section { border-top: 1px solid var(--line); padding-top: 24px; }
 .email-section h2 { margin-bottom: 24px; }
@@ -92,9 +93,8 @@ nav a[aria-current] { color: var(--blue); font-weight: 650; text-decoration: und
   .portrait { width: min(100%, 380px); justify-self: start; }
   .mission { grid-template-columns: 1fr; gap: 0; }
   .section { padding-block: 52px; }
-  .education-grid, .skills-grid, .contact-grid, .project-grid { grid-template-columns: 1fr; gap: 24px; }
+  .education-grid, .skills-grid, .contact-grid, .project-grid, .project-screenshots { grid-template-columns: 1fr; gap: 24px; }
   .closing { padding-block: 34px; }
   .page-main { padding-block: 44px 64px; }
-  .empty-state { padding-block: 40px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
