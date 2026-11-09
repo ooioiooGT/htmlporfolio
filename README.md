@@ -10,6 +10,8 @@ A three-page personal portfolio built with HTML, CSS, and vanilla JavaScript. No
 - `assets/styles.css`: shared layout, colors, typography, and mobile styles.
 - `assets/script.js`: automatically updates the footer year.
 
+The editorial layout uses Georgia for display headings, the system font for body text, and shared color variables in the stylesheet. Experience entries appear in three columns on wide screens and stack on smaller screens.
+
 ## Preview locally
 
 Open `index.html` directly in your browser, or serve the folder with Python:

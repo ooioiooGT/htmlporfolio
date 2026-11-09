@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-08 - Editorial restyle
+
+- Restyled all three pages with serif display type, more whitespace, thin dividers, and blue text links.
+- Gave the portrait and mission more space, arranged experience in responsive numbered columns, and opened up the education, skills, projects, and contact layouts.
+- Retained the existing palette, portfolio copy, portrait, and link destinations.
+
 ## 2026-11-08 - Initial MVP
 
 - Added responsive Home, Projects, and Contact pages in plain HTML, CSS, and JavaScript.
